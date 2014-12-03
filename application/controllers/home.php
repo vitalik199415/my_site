@@ -12,6 +12,9 @@ class Home extends CI_Controller
         $data['title'] = 'Главная';
         $this->load->view('template/header', $data);
         $this->load->view('template/footer');
+        dff
+        as
+
     }
 }
 
