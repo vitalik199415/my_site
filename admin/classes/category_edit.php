@@ -13,28 +13,34 @@ class category_edit extends ACore_Admin {
 
         $file_size = 5 * 1024 * 1024;
 
+        $id = trim(htmlspecialchars($_POST['id']));
+        $name = trim(htmlspecialchars($_POST['title']));
+        $description = trim($_POST['description']);
+        $uri = trim($_POST['uri']);
+        $meta_title = trim(htmlspecialchars($_POST['meta_title']));
+        $meta_description = trim(htmlspecialchars($_POST['meta_description']));
+        $meta_keywords = trim(htmlspecialchars($_POST['meta_keywords']));
+
         if (!empty($_FILES['img_src']['tmp_name'])) {
             if ($_FILES['img_src']['size'] < $file_size){
                 if (!move_uploaded_file($_FILES['img_src']['tmp_name'], "../images/category/" . $_FILES['img_src']['name'])) {
                     exit('Помилка завантаження зображення на сервер');
                 }
                 $img_src = $_FILES['img_src']['name'];
+
+                $query = "UPDATE categories
+                  SET name='$name',description='$description',image='$img_src',uri='$uri',meta_title='$meta_title',meta_description='$meta_description',meta_keywords='$meta_keywords'
+                  WHERE category_id='$id'";
             }
             else {
                 exit('Дозволено завантаження зображень розміром не більше 5 Мб');
             }
         }
-
-        $id = trim(htmlspecialchars($_POST['id']));
-        $name = trim(htmlspecialchars($_POST['title']));
-        $description = trim($_POST['description']);
-        $meta_title = trim(htmlspecialchars($_POST['meta_title']));
-        $meta_description = trim(htmlspecialchars($_POST['meta_description']));
-        $meta_keywords = trim(htmlspecialchars($_POST['meta_keywords']));
-
-        $query = "UPDATE categories
-                  SET name='$name',description='$description',image='$img_src',meta_title='$meta_title',meta_description='$meta_description',meta_keywords='$meta_keywords'
+        else {
+            $query = "UPDATE categories
+                  SET name='$name',description='$description',uri='$uri',meta_title='$meta_title',meta_description='$meta_description',meta_keywords='$meta_keywords'
                   WHERE category_id='$id'";
+        }
         if (!mysql_query($query)) {
             exit(mysql_error());
         }
@@ -59,6 +65,11 @@ class category_edit extends ACore_Admin {
                             <label for="title">Назва категорії<span class="required"> *</span></label><br>
                             <input id="title" type="text" name="title" value="'.$cat['name'].'" size="55" placeholder="Назва категорії" maxlength="255" required="true" pattern="^[A-Za-zА-Яа-яіІїЇьЬ\D]+[0-9]*{255}">
                             <span class="comment">Використовуйте латинські літери, кирилицю, цифри та символи(<strong>максимум</strong> 255 символів)</span><br>
+                        </div>
+                        <div>
+                            <label for="uri">Посилання на категорію<span class="required"> *</span></label><br>
+                            <input id="uri" type="text" name="uri" value="'.$cat['uri'].'" size="55" placeholder="URI" maxlength="255" required="true" pattern="^[A-Za-z\D\\]+{,255}">
+                            <span class="comment">Використовуйте латинські літери та символ \.(<strong>максимум</strong> 255 символів)</span><br>
                         </div>
                         <input type="hidden" name="id" value="'.$cat['category_id'].'">
                         <div>

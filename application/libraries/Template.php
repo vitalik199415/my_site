@@ -23,6 +23,6 @@ class Template {
             $HTML .= $CI->load->view($temp[0], $temp[1], TRUE);
         }
 
-
+        $CI->output->set_output($HTML);
     }
 }

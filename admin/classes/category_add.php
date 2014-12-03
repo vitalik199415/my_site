@@ -30,13 +30,14 @@ class category_add extends ACore_Admin {
 
         $name = trim(htmlspecialchars($_POST['title']));
         $description = trim($_POST['description']);
+        $uri = trim($_POST['uri']);
         $meta_title = trim(htmlspecialchars($_POST['meta_title']));
         $meta_description = trim(htmlspecialchars($_POST['meta_description']));
         $meta_keywords = trim(htmlspecialchars($_POST['meta_keywords']));
 
         $query = "INSERT INTO categories
-                    (name, description, image, meta_title, meta_description, meta_keywords)
-                     VALUES ('$name','$description','$img_src','$meta_title','$meta_description','$meta_keywords')";
+                    (name, description, image, uri, meta_title, meta_description, meta_keywords)
+                     VALUES ('$name','$description','$img_src','$uri','$meta_title','$meta_description','$meta_keywords')";
         if (!mysql_query($query)) {
             exit(mysql_error());
         }
@@ -61,8 +62,13 @@ class category_add extends ACore_Admin {
                             <span class="comment">Використовуйте латинські літери, кирилицю, цифри та символи(<strong>максимум</strong> 255 символів)</span><br>
                         </div>
                         <div>
+                            <label for="uri">Посилання на категорію<span class="required"> *</span></label><br>
+                            <input id="uri" type="text" name="uri" size="55" placeholder="URI" maxlength="255" required="true" pattern="^[A-Za-z\D\\]+{,255}">
+                            <span class="comment">Використовуйте латинські літери та символ \.(<strong>максимум</strong> 255 символів)</span><br>
+                        </div>
+                        <div>
                             <label for="image">Логотип категорії<span class="required"> *</span></label><br>
-                            <input id="image" type="file" name="img_src" required="true" accept="image/jpeg,image/png,image/gif">
+                            <input id="image" type="file" name="img_src" required="true" value="sdf" accept="image/jpeg,image/png,image/gif">
                             <span class="comment">Дозволено завантаження зображень розміром не більше 5 Мб</span><br>
                         </div>
                         <div>

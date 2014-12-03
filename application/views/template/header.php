@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrapValidator.min.css" />
     <link rel="stylesheet" href="css/jquery.bxslider.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,8 +32,8 @@
     <script src="js/jquery.bxslider.min.js"></script>
 </head>
 <body>
+<div class="navbar">
 
-<div class="col-md-12">
     <nav class="navbar-default navbar" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -138,3 +140,5 @@
         });
     });
 </script>
+
+    </div>

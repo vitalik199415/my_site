@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+body {
+    background-image: url("../images/bg-top.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto;
+}
+
 .align-center {
     margin: 0 auto;
 }

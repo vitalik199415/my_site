@@ -1,6 +1,6 @@
 <?php
 
-class Home extends VD_Controller
+class Home extends CI_Controller
 {
     public function __construct()
     {
@@ -10,8 +10,18 @@ class Home extends VD_Controller
     public function index()
     {
         $data['title'] = 'Главная';
-        $this->load->view('template/header', $data);
-        $this->load->view('template/footer');
+
+        $this->load->model('mcategory');
+
+        $data['category'] = $this->mcategory->get_categories();
+
+        $this->load->library('template');
+        $this->template->add('template/header', $data);
+        $this->template->add('template/slider');
+        $this->template->add('template/navigate', $data['category']);
+        $this->template->add('template/footer');
+
+        $this->template->render();
     }
 }
 
