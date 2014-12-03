@@ -47,7 +47,6 @@ class CI_Controller {
 		}
 
 		$this->load =& load_class('Loader', 'core');
-        $this->template = & load_class('Template');
         $this->output =& load_class('Output', 'core');
 
 		$this->load->initialize();
