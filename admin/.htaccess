@@ -1,0 +1,9 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteRule ^([a-z\D]*)$ index.php?view=$1 [NS,QSA]
+#RewriteRule ^([a-z\D]*)/([0-9]+)$ index.php?view=$1&act=$2 [NS,QSA]
+#RewriteRule ^([a-z]*)/([a-z]*)/([0-9]+)$ index.php?view=$1&action=$2&id=$3 [L]

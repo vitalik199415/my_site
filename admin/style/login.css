@@ -1,0 +1,80 @@
+/* Login page */
+* {
+    font-family: 'Calibri',Verdana, Tahoma, sans-serif;
+}
+
+a { text-decoration: none; color: blue; }
+a:hover { text-decoration: none; color: blue; }
+a:link { color: blue }
+body.login {
+    background-image: url("../images/login_bg.png");
+    background-repeat: repeat;
+}
+
+.opacity { 
+    background-image: url("../images/opacity.png");
+    background-repeat: repeat;
+    width: 250px;
+    margin: 100px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#login {
+    border-radius: 5px;
+    box-shadow: 1px 2px -1px -1px gray;
+    padding-bottom: 10px;
+}
+
+#center { text-align: center; }
+
+#login img {
+    margin: 5px auto;
+}
+
+#login_form {
+    text-align: center;
+    padding: 0 10px;
+}
+
+input[type="text"],input[type="password"] {
+    border: 1px solid #7EBB41;
+    border-radius: 1px;
+    padding: 7px;
+    color: #6e6e6e;
+    width: 100%;
+    margin: 0 auto;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#login_input { margin-bottom: 10px; }
+#pass_input { margin-bottom: 15px; }
+
+#back {
+    margin-right: 10px;
+}
+
+h3 {
+    margin: 5px 0;
+    padding: 0;
+}
+#send_pass {
+    text-align: center;
+}
+
+#remind {
+    display: none;
+}
+
+#send_mail {
+    text-align: center;
+}
+

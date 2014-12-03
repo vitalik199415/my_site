@@ -1,0 +1,517 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"slide",
+				"slideUp"
+			],
+			[
+				"result",
+				"result_op"
+			],
+			[
+				"stat",
+				"status_result"
+			],
+			[
+				"status",
+				"status_query"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"Prod",
+				"product"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"hide",
+				"hiden_row"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
+				"res",
+				"res_prod"
+			],
+			[
+				"mysql_fetch_a",
+				"mysql_fetch_array"
+			],
+			[
+				"mysql_er",
+				"mysql_error"
+			],
+			[
+				"quer",
+				"query_st"
+			],
+			[
+				"mysq",
+				"mysql_query"
+			],
+			[
+				"cust",
+				"customer_id"
+			],
+			[
+				"order",
+				"orders"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "admin/.htaccess",
+			"settings":
+			{
+				"buffer_size": 389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin/classes/ACoreAdmin.php",
+			"settings":
+			{
+				"buffer_size": 1621,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin/classes/categories.php",
+			"settings":
+			{
+				"buffer_size": 2276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin/models/add_product.php",
+			"settings":
+			{
+				"buffer_size": 1112,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin/index.php",
+			"settings":
+			{
+				"buffer_size": 802,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"Snippet: CI",
+				"Snippet: CI - Load Model"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"apck",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"CSS",
+				"Run CSScomb"
+			],
+			[
+				"git",
+				"Github: Repository"
+			],
+			[
+				"col",
+				"ColorSchemeSelector: Random Color Scheme"
+			],
+			[
+				"Snippet: ",
+				"Snippet: <?php … ?>"
+			]
+		],
+		"width": 626.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"cd ~/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/OpenServer/domains/localhost/rybachok",
+		"/C/OpenServer/domains/localhost/rybachok/admin",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes",
+		"/C/OpenServer/domains/localhost/rybachok/admin/template"
+	],
+	"file_history":
+	[
+		"/C/OpenServer/domains/localhost/rybachok/admin/helpers/category_helper.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/core/ACoreAdmin.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/controllers/categories.php",
+		"/C/OpenServer/domains/mvcshop/system/classes/database.php",
+		"/C/OpenServer/domains/mvcshop/system/config/config.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/admins.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/orders.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/categories.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/core/AG_Loader.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/core/AG_Controller.php",
+		"/C/OpenServer/domains/gbcportal.aza/system/core/Loader.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/modules/catalogue/controllers/products_attributes.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/modules/catalogue/heplers/products_save_helper123.php",
+		"/C/OpenServer/domains/gbcportal.aza/index.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/core/AG_Model.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/modules/site_settings/controllers/site_settings.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/modules/site_settings/models/msite_settings.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/helpers/site_settings/site_settings_helper.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/helpers/catalogue/products_helper.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/modules/catalogue/models/mproducts.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/modules/catalogue/models/mcategories.php",
+		"/C/OpenServer/domains/gbcportal.aza/application/admin/libraries/Grid.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/script/script.js",
+		"/C/OpenServer/domains/localhost/rybachok/admin/style/style.css",
+		"/C/OpenServer/domains/localhost/rybachok/admin/index.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/views/header.php",
+		"/C/Users/Віталій/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Віталій/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Віталій/AppData/Roaming/Sublime Text 3/Packages/Git GUI Clients/Git GUI Clients.sublime-settings",
+		"/C/Users/Віталій/AppData/Roaming/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings",
+		"/C/Users/Віталій/AppData/Roaming/Sublime Text 3/Packages/CSScomb/Default.sublime-keymap",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/users.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/product_add.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/user_delete.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/user_add.php",
+		"/C/Users/Віталій/Desktop/index.html",
+		"/C/Users/Віталій/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/OpenServer/domains/localhost/rybachok/admin/fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff",
+		"/C/OpenServer/domains/localhost/rybachok/admin/ckeditor/lang/ar.js",
+		"/C/OpenServer/domains/localhost/rybachok/classes/ACore.php",
+		"/C/OpenServer/domains/localhost/rybachok/.buildpath",
+		"/C/OpenServer/domains/localhost/rybachok/.settings/org.eclipse.core.resources.prefs",
+		"/C/OpenServer/domains/localhost/rybachok/admin/ckeditor/lang/ka.js",
+		"/C/OpenServer/domains/localhost/rybachok/admin/views/left_block.php",
+		"/C/OpenServer/domains/localhost/rybachok/index.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/ckeditor/plugins/image/dialogs/image.js",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/products.php",
+		"/C/Users/Віталій/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/OpenServer/domains/localhost/rybachok/admin/classes/admin_add.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/models/add_product.php",
+		"/C/OpenServer/domains/localhost/rybachok/default.php",
+		"/C/OpenServer/domains/localhost/rybachok/admin/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js",
+		"/C/OpenServer/domains/localhost/rybachok/admin/ckeditor/styles.js",
+		"/C/OpenServer/domains/localhost/rybachok/admin/ckeditor/samples/datafiltering.html"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"load			\n",
+			"			\n",
+			"'",
+			"ctrl+p"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "admin/.htaccess",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin/classes/ACoreAdmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "admin/classes/categories.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "admin/models/add_product.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "admin/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "rybachok.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"arr",
+				"admin\\fonts\\opensans_regular_macroman\\OpenSans-Regular-webfont.woff"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
