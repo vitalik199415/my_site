@@ -5,9 +5,3 @@
         <li class="active">Data</li>
     </ol>
 </div>
-
-<script>
-    $(document).ready(function(){
-        setTimeout(function(){ $('#breadcrumb').slideUp(500); }, 5000);
-    });
-</script>
