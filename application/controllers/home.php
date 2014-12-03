@@ -18,6 +18,7 @@ class Home extends CI_Controller
         $this->load->library('template');
         $this->template->add('template/header', $data);
         $this->template->add('template/slider');
+        $this->template->add('template/breadcrumb');
         $this->template->add('template/navigate', $data['category']);
         $this->template->add('template/footer');
 

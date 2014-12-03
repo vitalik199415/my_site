@@ -25,4 +25,9 @@ class Template {
 
         $CI->output->set_output($HTML);
     }
+
+    public function add_navigate($text, $link = '')
+    {
+
+    }
 }
