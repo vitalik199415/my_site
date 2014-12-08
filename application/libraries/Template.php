@@ -26,9 +26,13 @@ class Template {
         $this->data_head['meta_keywords'] = $keywords;
     }
 
-    public function add_navigate($text, $link = '')
+    public function add_navigate($text, $link = FALSE)
     {
-
+        if($link) {
+            $this->data_navigate['breadcrumb'][] = array('text' => $text, 'link' => $link);
+        } else {
+            $this->data_navigate['breadcrumb'][] = array('text' => $text);
+        }
     }
 
     public function render()
@@ -38,6 +42,9 @@ class Template {
         $HTML = '';
 
         $HTML .= $CI->load->view('template/header', $this->data_head, TRUE);
+        $HTML .= $CI->load->view('template/slider', array(), TRUE);
+        $HTML .= $CI->load->view('template/breadcrumb', $this->data_navigate, TRUE);
+        
 
         foreach($this->page_arr as $temp)
         {
