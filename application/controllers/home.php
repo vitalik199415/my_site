@@ -22,7 +22,7 @@ class Home extends CI_Controller
         $this->template->add_navigate('Вудилища');
         $this->template->add('template/navigate', $data);
         $this->template->add('template/footer');
-
+        
         $this->template->render();
     }
 }
