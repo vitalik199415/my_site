@@ -34,7 +34,7 @@
     <script src="js/jquery.bxslider.min.js"></script>
 </head>
 <body>
-<div class="navbar">
+<div class="navbar" id="top-navbar">
 
     <nav class="navbar-default navbar" role="navigation">
         <div class="container-fluid">
@@ -72,7 +72,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Вход <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <form role="form" action="/login/login" method="post" class="form-group login-form" id="login-form">
+                                <form role="form" action="/login/check" method="post" class="form-group login-form" id="login-form">
                                     <div class="input-group form-group">
                                         <input type="text" class="form-control" name="login" placeholder="Login">
                                     </div>

@@ -5,10 +5,9 @@ class Template {
     private $page_arr = array();
     private $data_head = array();
     private $data_navigate = array();
+    private $slider = TRUE;
 
-    function __construct()
-    {
-    }
+    function __construct() { }
 
     public function add($view, $data=array())
     {
@@ -19,7 +18,12 @@ class Template {
     {
         $this->data_head['title'] = $text;
     }
-
+    
+    public function enable_slider($en = TRUE)
+    {
+        $this->slider = $en;
+    }
+    
     public function add_meta($desc, $keywords)
     {
         $this->data_head['meta_desc'] = $desc;
@@ -42,7 +46,9 @@ class Template {
         $HTML = '';
 
         $HTML .= $CI->load->view('template/header', $this->data_head, TRUE);
-        $HTML .= $CI->load->view('template/slider', array(), TRUE);
+        if ($this->slider) {
+            $HTML .= $CI->load->view('template/slider', array(), TRUE);
+        }
         $HTML .= $CI->load->view('template/breadcrumb', $this->data_navigate, TRUE);
         
 

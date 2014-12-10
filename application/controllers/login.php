@@ -7,10 +7,25 @@ class Login extends CI_Controller {
         parent::__construct();
     }
 
-    public function login()
+    public function index()
     {
-        $this->load->model('mlogin');
-        $this->mlogin->login();
+        echo "dsfsdf";
+    }
+    
+    public function check()
+    {
+        if($this->input->post())
+        {
+            $user_data = $this->input->post();
+            
+            $this->load->model("mlogin");
+            $user = $this->mlogin->check($user_data['login'], $user_data['password']);
+            if(count($user) > 0)
+            {
+                $this->session->set_userdata($user);
+                redirect('/');
+            }
+        }
     }
 
 }
